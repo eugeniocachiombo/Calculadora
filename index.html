@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all6.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all5.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    
+    <style>
+       input[type='text'],input[type='number'],#apagar {
+            background-color: white;
+            font-weight: bold;
+            color: black;
+        }
+
+       input[type='text']:hover,input[type='number']:hover,#apagar:hover {
+            background-color: #299;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-5 d-flex justify-content-center align-items-end" style="min-height: 90vh;">
+        <div class="container">
+            <div class="container">
+                <center>
+                    <h1 class="display-3" style="color: #299;">
+                        Calculadora
+                        <hr>
+                    </h1>
+
+                    <div class="row mb-5 pt-5  pb-5">
+                        <textarea cols="0" rows="1" disabled class="pt-5  pb-5 display-3"
+                            style="color: #299; border: none; text-align: right" type="text" name="" id=""></textarea>
+
+                        <div class="col" style="">
+                            <p class="display-5 form-control" style="font-weight: bold; min-width: 100px">
+                                Resultado: <span class="" id="resultado"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row" style=" min-width: 100px; background:#299;">
+                        <center>
+                            <div class="row d-flex justify-content-around pt-3">
+                                <input type="text" readonly class="btn border m-1" style="width: 22%"
+                                    value="+">
+                                <input type="text" readonly class="btn border m-1" style="width: 22%"
+                                    value="-">
+                                <input type="text" readonly class="btn border m-1" style="width: 22%"
+                                    value="*">
+                                <input type="text" readonly class="btn border m-1" style="width: 22%"
+                                    value="/">
+                            </div>
+                        </center>
+
+                        <center>
+                            <div class="row pb-3">
+
+                                <div class="col-9 ">
+
+                                    <div class="row d-flex justify-content-around mt-1">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="1">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="2">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="3">
+                                    </div>
+
+                                    <div class="row d-flex justify-content-around">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="4">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="5">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="6">
+                                    </div>
+
+                                    <div class="row d-flex justify-content-around">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="7">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="8">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="9">
+                                    </div>
+
+                                    <div class="row d-flex justify-content-around">
+                                        <input type="number" readonly class="btn border m-1" style="width: 29%"
+                                            value="0">
+                                        <input type="text" readonly class="btn border m-1" style="width: 29%"
+                                            value=".">
+                                        <input type="text" readonly class="btn border m-1" style="width: 29%"
+                                            value="%">
+                                    </div>
+
+                                    <div class="row d-flex justify-content-around">
+                                        <input type="text" readonly class="btn border m-1" style="width: 29%"
+                                            value="(">
+                                        <input type="text" readonly class="btn border m-1" style="width: 29%"
+                                            value=")">
+                                        <input type="text" readonly class="btn border m-1" style="width: 29%"
+                                            value="^">
+                                    </div>
+
+                                </div>
+
+                                <div class="col-3 d-flex justify-content-around ">
+                                    <button type="button" readonly
+                                        class="btn d-column mt-2 border  mb-1 pb-2 d-flex justify-content-center align-items-center"
+                                        style="height: 220px; width: 120%; " value="Apagar" id="apagar">
+                                        <b>Apagar</b>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </center>
+                    </div>
+
+                    <br>
+                    <p class="text-center"><span class="text-danger">Criado por:</span> Eugénio Cachiombo <span
+                            class="text-success">(Génio Pró)</span></p>
+                    <hr>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/calculadora.js"></script>
+</body>
+
+</html>
